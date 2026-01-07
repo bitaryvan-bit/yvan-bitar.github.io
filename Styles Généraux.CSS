@@ -1,0 +1,79 @@
+/* Configuration générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Centre les liens de navigation */
+nav {
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center; /* Centre les liens au milieu */
+    gap: 50px; /* Espace entre les liens */
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Arrière-plan Raouché avec texte à gauche */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    /* Image lebanon-header.jpg avec un voile pour la lisibilité */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('lebanon-header.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+/* Bouton Explorer style Maquette */
+.btn-explorer {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 12px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-explorer:hover {
+    background-color: #f2f2f2;
+}

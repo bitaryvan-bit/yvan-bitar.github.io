@@ -1,0 +1,152 @@
+/* --- STYLE GLOBAL DE LA PAGE MEZZA --- */
+
+.page-detail {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Bannière principale */
+.hero-interne {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 40px;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.mezza-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url("images/mezza.webp");
+}
+
+.hero-interne h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- TITRES DE CATÉGORIES (Froids vs Chauds) --- */
+
+.category-title {
+    font-size: 2.2rem;
+    color: #222831;
+    margin: 60px 0 30px 5%; /* Aligné avec les cartes */
+    padding-left: 20px;
+    border-left: 8px solid #ff9f43; /* Couleur orange/gastronomie */
+    text-transform: uppercase;
+}
+
+/* --- GRILLE ET CARTES --- */
+
+.content-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 5%;
+}
+
+.destination-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+}
+
+.destination-card img {
+    width: 35%; /* Légèrement plus petit pour laisser place au texte */
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.05); /* Zoom discret sur l'image au survol */
+}
+
+.destination-card .desc {
+    padding: 40px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destination-card h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.destination-card p {
+    color: #576574;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* --- BOUTON RETOUR --- */
+
+.back-home {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn-back {
+    display: inline-block;
+    text-decoration: none;
+    background: #222831;
+    color: #ffffff;
+    padding: 18px 45px;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid #222831;
+}
+
+.btn-back:hover {
+    background: transparent;
+    color: #222831;
+    transform: scale(1.05);
+}
+
+/* --- RESPONSIVE MOBILE --- */
+
+@media (max-width: 850px) {
+    .destination-card {
+        flex-direction: column;
+    }
+    .destination-card img, 
+    .destination-card .desc {
+        width: 100%;
+    }
+    .destination-card img {
+        height: 220px;
+    }
+    .hero-interne h1 {
+        font-size: 2.5rem;
+    }
+    .category-title {
+        font-size: 1.8rem;
+    }
+}
